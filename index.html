@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vignesh S | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#techstack">Tech Stack</a>
+    <a href="#contact">Contact</a>
+  </nav>
+<script>
+  const text = "Hi, I'm VIGNESH";
+  let index = 0;
+  const speed = 100; // typing speed
+
+  function typeWriter() {
+    if (index < text.length) {
+      document.getElementById("typing-text").innerHTML += text.charAt(index);
+      index++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+
+  window.onload = typeWriter;
+</script>
+
+  <section id="hero" class="section hero">
+  <div class="photo-container">
+    <img src="profile.jpg" alt="Vignesh's Photo" class="profile-pic" />
+  </div>
+  <h1 class="glow typing" id="typing-text"></h1>
+  <p class="subtitle">AI & Data Science Student | Full Stack Developer | Data Analyst</p>
+  <div class="hero-links">
+  <a href="https://bit.ly/vigneshconnect" target="_blank" class="icon-link">
+    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" />
+    LinkedIn
+  </a>
+
+  <a href="https://github.com/vignesh-vasan" target="_blank" class="icon-link">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" />
+    GitHub
+  </a>
+
+  <a href="mailto:vigneshvasan21@gmail.com" class="icon-link">
+    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" />
+    Email
+  </a>
+
+  <a href="resume.pdf" download class="icon-link">
+    <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="Resume" />
+    Resume
+  </a>
+</div>
+
+
+
+</section>
+
+
+  <section id="about" class="section">
+  <h2 class="glow">ABOUT ME</h2>
+  <p>
+    I'm a passionate and curious Full Stack Developer with a strong foundation in AI & Data Science.
+    Currently pursuing my B.Tech at Er. Perumal Manimekalai College of Engineering, I've maintained a CGPA of 9.41 and actively contributed to technical projects that solve real-world problems.
+  </p>
+
+  <p>
+    I specialize in building modern, scalable web applications using technologies like React, Node.js, Flask, and FastAPI — and love integrating them with machine learning models using Python, TensorFlow, or Scikit-learn.
+    Whether it's designing elegant UIs or deploying backend logic, I enjoy the full development cycle.
+  </p>
+
+  <p>
+    I'm also skilled in data analysis, visualization, and storytelling through tools like Power BI, Tableau, and Python libraries. My goal is to create technology that is not just functional, but insightful.
+  </p>
+
+  <p>
+    Outside of coding, I constantly explore new tools, contribute to GitHub, and participate in hackathons to challenge myself. I value teamwork, clear communication, and learning through collaboration.
+  </p>
+
+  <p>
+    I'm actively seeking internship opportunities and freelance roles where I can bring value through both technical skills and creative thinking.
+    Let's build something amazing together!
+  </p>
+</section>
+
+
+  <section id="projects" class="section">
+  <h2 class="glow">PROJECTS</h2>
+
+  <div class="project-grid">
+
+    <div class="project-card">
+      <img src="images/house-prediction.png" alt="House Rate Prediction" />
+      <div class="card-content">
+        <h3>House Rate Prediction</h3>
+        <p>ML model that predicts house prices based on location and features.</p>
+        <div class="tags">
+          <span>Python</span><span>Pandas</span><span>Scikit-learn</span>
+        </div>
+        <a href="https://github.com/vignesh-vasan/HOUSE-RATE-PREDICTION-MODEL" target="_blank">View Project →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/sentiment-analysis.png" alt="Customer Sentiment Analysis" />
+      <div class="card-content">
+        <h3>Customer Sentiment Analysis</h3>
+        <p>Classifies customer reviews as positive or negative using NLP.</p>
+        <div class="tags">
+          <span>Python</span><span>NLP</span><span>Scikit-learn</span>
+        </div>
+        <a href="https://github.com/vignesh-vasan/CUSTOMER-SENTIMENT-ANALYSIS" target="_blank">View Project →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/student-db.png" alt="Student Database Website" />
+      <div class="card-content">
+        <h3>Student Database Website</h3>
+        <p>Full-stack web app for managing student data securely.</p>
+        <div class="tags">
+          <span>Flask</span><span>MySQL</span><span>HTML/CSS</span>
+        </div>
+        <a href="https://github.com/vignesh-vasan/STUDENT-DATABASE-WEBSITE" target="_blank">View Project →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/voice-assistant.png" alt="Voice Assistant" />
+      <div class="card-content">
+        <h3>Voice Assistant</h3>
+        <p>A desktop voice assistant that executes system tasks and web commands.</p>
+        <div class="tags">
+          <span>Python</span><span>SpeechRecognition</span><span>pyttsx3</span>
+        </div>
+        <a href="https://github.com/vignesh-vasan/VOICE-ASSISTANT" target="_blank">View Project →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/nfc-attendance.png" alt="NFC Attendance System" />
+      <div class="card-content">
+        <h3>NFC Based Attendance System</h3>
+        <p>Smart attendance system using NFC and facial recognition to log presence.</p>
+        <div class="tags">
+          <span>Python</span><span>OpenCV</span><span>NFC</span>
+        </div>
+        <a href="https://github.com/vignesh-vasan" target="_blank">View Project →</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="images/defect-detect.png" alt="Defect Detection" />
+      <div class="card-content">
+        <h3>Defect Detection using ML</h3>
+        <p>Defect Detection of bottles by training model and identify it using opencv</p>
+        <div class="tags">
+          <span>Python</span><span>OpenCV</span>
+        </div>
+        <a href="https://github.com/vignesh-vasan/DEFECT-DETECTION" target="_blank">View Project →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="education" class="section">
+  <h2 class="glow">EDUCATION</h2>
+
+  <div class="edu-row">
+    <img src="https://img.icons8.com/ios-filled/40/0ff/graduation-cap.png" alt="UG" />
+    <div class="edu-text">
+      <h3>B.Tech – AI & Data Science</h3>
+      <p>Er. Perumal Manimekalai College of Engineering, Hosur</p>
+    </div>
+    <div class="edu-badges">
+      <span class="badge">2022 – Present</span>
+      <span class="badge">CGPA: 9.41</span>
+    </div>
+  </div>
+
+  <div class="edu-row">
+    <img src="https://img.icons8.com/ios-filled/40/0ff/school.png" alt="HSC" />
+    <div class="edu-text">
+      <h3>Higher Secondary (HSC)</h3>
+      <p>Agasthiya Vidyalaya Matric Hr Sec School</p>
+    </div>
+    <div class="edu-badges">
+      <span class="badge">2018 – 2020</span>
+      <span class="badge">Percentage: 74%</span>
+    </div>
+  </div>
+
+  <div class="edu-row">
+    <img src="https://img.icons8.com/ios-filled/40/0ff/classroom.png" alt="SSLC" />
+    <div class="edu-text">
+      <h3>SSLC</h3>
+      <p>Agasthiya Vidyalaya Matric Hr Sec School</p>
+    </div>
+    <div class="edu-badges">
+      <span class="badge">2016 – 2018</span>
+      <span class="badge">Percentage: 89%</span>
+    </div>
+  </div>
+</section>
+
+
+  <section id="techstack" class="section">
+  <h2 class="glow">TECH STACK</h2>
+  <div class="skill-cards">
+
+    <div class="skill-card">
+      <h3>Languages</h3>
+      <div class="badges">
+        <span class="badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/> Python</span>
+        <span class="badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/> JavaScript</span>
+        <span class="badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/> HTML</span>
+        <span class="badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/> CSS</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <h3>Web Development</h3>
+      <div class="badges">
+        <span class="badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"/> React</span>
+        <span class="badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"/> Node.js</span>
+        <span class="badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"/> Express</span>
+        <span class="badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"/> Bootstrap</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <h3>AI / ML</h3>
+      <div class="badges">
+        <span class="badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"/> TensorFlow</span>
+        <span class="badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg"/> PyTorch</span>
+        <span class="badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg"/> NumPy</span>
+        <span class="badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"/> Pandas</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <h3>Databases</h3>
+      <div class="badges">
+        <span class="badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"/> MongoDB</span>
+        <span class="badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"/> MySQL</span>
+        <span class="badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"/> PostgreSQL</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <h3>Tools & Platforms</h3>
+      <div class="badges">
+        <span class="badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"/> Git</span>
+        <span class="badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/> GitHub</span>
+        <span class="badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg"/> Postman</span>
+        <span class="badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"/> VS Code</span>
+      </div>
+    </div>
+    <div class="skill-card">
+  <h3>☁️ Cloud & Deployment</h3>
+  <div class="badges">
+    <span class="badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg" /> Netlify</span>
+    <span class="badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/render/render-original.svg" /> Render</span>
+    <span class="badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" /> Docker</span>
+    <span class="badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg" /> GitHub Actions</span>
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+
+
+  <section id="contact" class="section">
+  <h2 class="glow">CONTACT ME @</h2>
+  <form class="contact-form" onsubmit="event.preventDefault(); alert('Message Sent!');">
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="Your name" required />
+
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Your email" required />
+
+    <label for="message">Message</label>
+    <textarea id="message" placeholder="Your message" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+
+  <script>
+    ScrollReveal().reveal('.section h2', { delay: 200, distance: '50px', origin: 'bottom' });
+    ScrollReveal().reveal('.section p, .project, .skills-list li', { delay: 400, distance: '30px', origin: 'bottom' });
+  </script>
+</body>
+</html>
